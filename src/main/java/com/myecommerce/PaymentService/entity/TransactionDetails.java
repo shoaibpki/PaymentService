@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.time.Instant;
 
 @Entity
 @Data
@@ -25,6 +26,7 @@ public class TransactionDetails {
     private String referenceNumber;
     private String PaymentMode;
     private String PaymentStatus;
+    private Instant paymentDate;
     private long Amount;
 
 }
